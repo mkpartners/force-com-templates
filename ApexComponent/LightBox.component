@@ -1,0 +1,49 @@
+<apex:component layout="none" >
+
+	<apex:attribute name="opacity" type="Integer" description="Background Opacity" default="50" />
+	<apex:attribute name="backgroundClassName" type="String" description="CSS Class name for background" default="lightBoxBackground" />
+	<apex:attribute name="foregroundClassName" type="String" description="CSS Class name for foreground" default="lightBoxForeground" />
+
+	<style type="text/css">
+		.{!backgroundClassName} {
+			position:absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: #000;
+            z-index: 1001;
+            -moz-opacity: {!opacity/100};
+            opacity:{!opacity/100};
+            filter: alpha(opacity={!opacity});
+		}
+		.{!foregroundClassName} {
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            position:absolute;
+            top: 0px;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            padding:10px;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            width: 900px;
+		}
+	</style>
+	<script type="text/javascript" >
+		function toggleLightBox(id){
+			console.log(id);
+			if ( id != null && document.getElementById(id).style.display == "block" ){
+				document.getElementById("{!backgroundClassName}").style.display = "none";
+				document.getElementById(id).style.display = "none";
+			} else {
+				document.getElementById("{!backgroundClassName}").style.display = "block";
+				document.getElementById(id).style.display = "block";
+			}
+		}
+	</script>
+
+</apex:component>

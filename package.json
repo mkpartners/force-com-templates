@@ -1,0 +1,132 @@
+{
+    "ApexClass":[
+        {
+            "name":"Extension",
+            "file_name":"Extension.cls",
+            "description":"Visualforce Extension",
+            "author":"Matt Kaufman",
+            "params":[
+                {
+                    "name":"api_name",
+                    "description":"Apex Class API Name",
+                    "default":"custom_Extension"
+                }
+            ]
+        },
+        {
+            "name":"TestClass",
+            "file_name":"TestClass.cls",
+            "description":"Test Class",
+            "author":"Matt Kaufman",
+            "params":[
+                {
+                    "name":"api_name",
+                    "description":"Apex Class API Name",
+                    "default":"my_Tests"
+                }
+            ]
+        },
+        {
+            "name":"TestDataFactory",
+            "file_name":"TestDataFactory.cls",
+            "description":"TestDataFactory",
+            "author":"Matt Kaufman",
+            "params":[
+                {
+                    "name":"api_name",
+                    "description":"Apex Class API Name",
+                    "default":"testDataFactory"
+                }
+            ]
+        },
+        {
+            "name":"TriggerHelper",
+            "file_name":"TriggerHelper.cls",
+            "description":"Trigger Helper Class",
+            "author":"Matt Kaufman",
+            "params":[
+                {
+                    "name":"api_name",
+                    "description":"Apex Class API Name",
+                    "default":"my_Helper"
+                }
+            ]
+        },
+        {
+            "name":"Util",
+            "file_name":"Util.cls",
+            "description":"Util Class",
+            "author":"Matt Kaufman",
+            "params":[
+                {
+                    "name":"api_name",
+                    "description":"Apex Class API Name",
+                    "default":"util"
+                }
+            ]
+        },
+    ],
+    "ApexComponent":[
+        {
+            "name":"Apex Component",
+            "file_name":"ApexComponent.component",
+            "description":"Basic Visualforce Component template",
+            "author":"Matt Kaufman",
+            "params":[
+                {
+                    "name":"api_name",
+                    "description":"Visualforce Component API Name",
+                    "default":"customComponent"
+                }
+            ]
+        },
+        {
+            "name":"Lightbox Component",
+            "file_name":"Lightbox.component",
+            "description":"Lightbox template",
+            "author":"Matt Kaufman",
+            "params":[
+                {
+                    "name":"api_name",
+                    "description":"Visualforce Component API Name",
+                    "default":"Lightbox"
+                }
+            ]
+        }
+    ],
+    "ApexPage":[
+        {
+            "name":"ApexPage",
+            "file_name":"ApexPage.page",
+            "description":"Basic Visualforce Page template",
+            "author":"Matt Kaufman",
+            "params":[
+                {
+                    "name":"api_name",
+                    "description":"Visualforce Page API Name",
+                    "default":"customPage"
+                }
+            ]
+        }
+    ],
+    "ApexTrigger":[
+        {
+            "name":"Apex Trigger",
+            "file_name":"ApexTrigger.trigger",
+            "description":"Basic Apex Trigger template",
+            "author":"Matt Kaufman",
+            "params":[
+                {
+                    "name":"api_name",
+                    "description":"Apex Trigger API Name",
+                    "default":"custom_Trigger"
+                },
+                {
+                    "name":"object_name",
+                    "description":"Object API Name",
+                    "default":"Account"
+                }
+            ]
+        }
+    ]
+}

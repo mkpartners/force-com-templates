@@ -10,6 +10,11 @@
                     "name":"api_name",
                     "description":"Apex Class API Name",
                     "default":"custom_Extension"
+                },
+                {
+                    "name":"object_name",
+                    "description":"Object API Name",
+                    "default":"Account"
                 }
             ]
         },

@@ -54,6 +54,11 @@
                     "name":"api_name",
                     "description":"Apex Class API Name",
                     "default":"my_Helper"
+                },
+                {
+                    "name":"object_name",
+                    "description":"Object API Name",
+                    "default":"Account"
                 }
             ]
         },
